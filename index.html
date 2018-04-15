@@ -21,28 +21,48 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="page-header" id="buttons">
 
-    <!-- buttons -->
-    <button data-search="Issa Rae">Test</button>
-    <button data-search="Tulip">Tulip</button>
-    <button data-search="Sunflower">Sunflower</button>
-    <button data-search="Daffodil">Daffodil</button>
-    <button data-search="Rose">Rose</button>
-    <button data-search="Orchids">Orchids</button>
-    <button data-search="Daisy">Daisy</button>
-    <button data-search="Hydrangea">Hydrangea</button>
+            <!-- buttons -->
+            <button class="btn btn-primary search" data-search="Issa Rae">Test</button>
+            <button class="btn btn-primary search" data-search="Rugrats">Rugrats</button>
+            <button class="btn btn-primary search" data-search="Hey Arnold">Hey Arnold</button>
+            <button class="btn btn-primary search" data-search="Boondocks">Boondocks</button>
+            <button class="btn btn-primary search" data-search="Magic School Bus">Magic School Bus</button>
+            <button class="btn btn-primary search" data-search="Tom and Jerry">Tom and Jerry</button>
+            <button class="btn btn-primary search" data-search="Pinky and the Brain">Pinky and the Brain</button>
+            <button class="btn btn-primary search" data-search="Scooby-Doo">Scooby-Doo</button>
+            <button class="btn btn-primary search" data-search="Doug">Doug</button>
+            <button class="btn btn-primary search" data-search="Inspector Gadget">Inspector Gadget</button>
+        </div>
+    </div>
+        <!-- where gif will be -->
+    <div class="container">
+        <div class="row">
 
-    <!-- where gif will be -->
-    <div id="gifArea"></div>
+            <div class="col-sm-8">
+                <div id="gifArea"></div>
+            </div>
 
-    <!-- search box -->
-    <input type="text" name="search" placeholder="Search..">
+            <!-- search box area -->
+            <div class="col-sm-4">
+            <form>
+                <div class="form-group">
+                    <label for="gif-search">New search:</label>
+                    <input type="text" class="form-control" id="text box" placeholder="Type search here">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
 
-
-    <footer class="footer">
-        <p>Copyright &copy; 2018 Seirra Dawson</p>
-    </footer>
-
+        <footer class="footer">
+            <p>Copyright &copy; 2018 Seirra Dawson</p>
+        </footer>
+    </div>
 
     <!-- Link to jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

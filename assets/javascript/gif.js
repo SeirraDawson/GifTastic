@@ -1,3 +1,10 @@
+// Array of strings for topics -> cartoons
+var topics = ["Rugrats", "Hey Arnold", "Boondocks", "Magic School Bus",
+            "Tom and Jerry", "Pinky and the Brain", "Scooby-Doo", "Doug",
+            "Inspector Gadget"];
+var stillGif;
+var animatedGif;
+
 // On click function
 $("button").on("click",function(){
     var x = $(this).data("search");
