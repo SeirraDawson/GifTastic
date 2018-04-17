@@ -22,42 +22,44 @@
 
 <body>
     <div class="container">
-        <div class="page-header" id="buttons">
-
-            <!-- buttons -->
-            <button class="btn btn-primary search" data-search="Issa Rae">Test</button>
-            <button class="btn btn-primary search" data-search="Rugrats">Rugrats</button>
-            <button class="btn btn-primary search" data-search="Hey Arnold">Hey Arnold</button>
-            <button class="btn btn-primary search" data-search="Boondocks">Boondocks</button>
-            <button class="btn btn-primary search" data-search="Magic School Bus">Magic School Bus</button>
-            <button class="btn btn-primary search" data-search="Tom and Jerry">Tom and Jerry</button>
-            <button class="btn btn-primary search" data-search="Pinky and the Brain">Pinky and the Brain</button>
-            <button class="btn btn-primary search" data-search="Scooby-Doo">Scooby-Doo</button>
-            <button class="btn btn-primary search" data-search="Doug">Doug</button>
-            <button class="btn btn-primary search" data-search="Inspector Gadget">Inspector Gadget</button>
+        <div class="jumbotron">
+            <h2>GIFoogle</h2>
         </div>
+        <!-- Rendering the new buttons -->
+        <div id="topBtns"></div>
+
     </div>
         <!-- where gif will be -->
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-8">
+            <div class="col-md-9">
                 <div id="gifArea"></div>
             </div>
 
-            <!-- search box area -->
-            <div class="col-sm-4">
-            <form>
-                <div class="form-group">
-                    <label for="gif-search">New search:</label>
-                    <input type="text" class="form-control" id="text box" placeholder="Type search here">
-                </div>
+            <!-- search box area && buttons -->
+            <div class="col-md-3">
+            <!-- Using form so that the user has the option of hitting enter instead of clicking the button -->
+                <form>
+                    <div class="form-group">
+                        <label for="gif-search">GIF finder</label>
+                        <input type="text" class="form-control" id="text-box" placeholder="If you think it we can find it">
+                        <input id="submitBtn" type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </form>
                 <div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <p>Recent Searches</p>
+                    <!-- buttons -->
+                    <button class="btn" data-topic="Rugrats">Rugrats</button>
+                    <button class="btn" data-topic="Hey Arnold">Hey Arnold</button>
+                    <button class="btn" data-topic="Tom and Jerry">Tom and Jerry</button>
+                    <button class="btn" data-topic="Scooby-Doo">Scooby-Doo</button>
+                    <button class="btn" data-topic="Doug">Doug</button>
                 </div>
-            </form>
             </div>
+
         </div>
+    </div>
 
         <footer class="footer">
             <p>Copyright &copy; 2018 Seirra Dawson</p>
