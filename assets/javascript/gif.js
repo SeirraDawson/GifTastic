@@ -31,7 +31,7 @@ $(document).ready(function() {
             for (var i = 0; i < results.length; i++){
             //Create a var for the <div> to hold the topic
             var topicDiv = $("<div>");
-            topicDiv.addClass("gifContainer")
+            topicDiv.addClass("gifContainer");
 
             //Create a var to store the rating data
             var rating = results[i].rating;
