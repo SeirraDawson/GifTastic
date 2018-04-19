@@ -9,7 +9,7 @@ $(document).ready(function() {
         var name = $(this).attr("data-topic");
         console.log("Topic name is: " + name);
         //Call GIPHY API in JavaScript with jQuery -> var queryURL - limit of 10 images
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + name +
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + name +
         "&api_key=Z6aJDTddb8YIRpgF6PmSR5cGXHAYSRPs&limit=10";
         console.log("URL is: " + queryURL);
 
