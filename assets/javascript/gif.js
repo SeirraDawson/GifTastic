@@ -30,7 +30,8 @@ $(document).ready(function() {
             //loop through every result item
             for (var i = 0; i < results.length; i++){
             //Create a var for the <div> to hold the topic
-            var topicDiv = $("<div class='col-md-9'>");
+            var topicDiv = $("<div>");
+            topicDiv.addClass("gifContainer")
 
             //Create a var to store the rating data
             var rating = results[i].rating;

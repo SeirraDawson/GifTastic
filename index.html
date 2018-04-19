@@ -21,46 +21,46 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="body">
         <div class="jumbotron">
             <h2>GIFoogle</h2>
         </div>
         <!-- Rendering the new buttons -->
         <div id="topBtns"></div>
 
-    </div>
+
         <!-- where gif will be -->
-    <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-md-9">
-                <div id="gifArea"></div>
-            </div>
-
-            <!-- search box area && buttons -->
-            <div class="col-md-3">
-            <!-- Using form so that the user has the option of hitting enter instead of clicking the button -->
-                <form>
-                    <div class="form-group">
-                        <label for="gif-search">GIF finder</label>
-                        <input type="text" class="form-control" id="text-box" placeholder="If you think it we can find it">
-                        <input id="submitBtn" type="submit" class="btn btn-primary" value="Submit">
-                    </div>
-                </form>
-                <div>
-                    <p>Recent Searches</p>
-                    <!-- buttons -->
-                    <button class="btn" data-topic="Rugrats">Rugrats</button>
-                    <button class="btn" data-topic="Hey Arnold">Hey Arnold</button>
-                    <button class="btn" data-topic="Tom and Jerry">Tom and Jerry</button>
-                    <button class="btn" data-topic="Scooby-Doo">Scooby-Doo</button>
-                    <button class="btn" data-topic="Doug">Doug</button>
+                <div class="col-md-9" class="d-inline-block">
+                    <div id="gifArea" ></div>
                 </div>
-            </div>
 
+                <!-- search box area && buttons -->
+                <div class="col-md-3">
+                <!-- Using form so that the user has the option of hitting enter instead of clicking the button -->
+                    <form>
+                        <div class="form-group">
+                            <label for="gif-search">GIF finder</label>
+                            <input type="text" class="form-control" id="text-box" placeholder="If you think it we can find it">
+                            <input id="submitBtn" type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </form>
+                    <div>
+                        <p>Recent Searches</p>
+                        <!-- buttons -->
+                        <button class="btn" data-topic="Rugrats">Rugrats</button>
+                        <button class="btn" data-topic="Hey Arnold">Hey Arnold</button>
+                        <button class="btn" data-topic="Tom and Jerry">Tom and Jerry</button>
+                        <button class="btn" data-topic="Scooby-Doo">Scooby-Doo</button>
+                        <button class="btn" data-topic="Doug">Doug</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-
         <footer class="footer">
             <p>Copyright &copy; 2018 Seirra Dawson</p>
         </footer>

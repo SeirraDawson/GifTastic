@@ -4,9 +4,12 @@ body {
 }
 /* header */
 .jumbotron {
-    margin-top: -30px;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(74, 141, 241);
 }
+
 h2 {
     text-align: center;
     font-weight: bold;
@@ -16,27 +19,47 @@ h2 {
 
 /* buttons */
 button {
-    margin: 5px 10px 0px 0px;
+    margin: 0px 8px 0px 0px;
+
+}
+
+#topBtns {
+    margin-right: 25px;
 }
 
 
 
 /* gifArea */
 img {
-    margin:10px;
+
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-style: solid;
     clear: both;
-	display: inline;
     flex-wrap: wrap;
+    margin-right: 3px;
 }
 
 #gifArea {
 	clear: both;
 	display: inline;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    display: inline-block
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+
+
+}
+
+.gifContainer{
+    float: left;
 }
 
 /* search area */
@@ -51,6 +74,6 @@ img {
     font-size: 15px;
     clear:both;
     text-align: center;
-    margin-top: 230px;
+    margin-top: 280px;
     margin-left: 450px;
 }
